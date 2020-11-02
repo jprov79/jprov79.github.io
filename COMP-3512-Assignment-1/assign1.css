@@ -1,0 +1,120 @@
+﻿body {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 200;
+    /*image from https://www.pexels.com/photo/art-art-gallery-gallery-guadalajara-678048/ */
+    background-image: url("Images/pexels-karla-lópez-678048.jpg");
+    background-size: 100% 100%;
+}
+header {
+    height: 5rem;
+    margin-bottom: 10px;
+}
+
+main {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 20rem 31rem 20rem;
+    grid-template-rows: 17rem 35rem 25rem 3rem;
+}
+
+button {
+    background-color:aquamarine;
+    border: none;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color:aliceblue;
+    color: black;
+}
+
+
+
+.box {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:aliceblue;
+    opacity: 0.8;
+
+}
+
+.galleryBar {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    display: block;
+}
+
+.galleryInfo {
+    grid-column: 2 / span 1;
+    grid-row:1 /span 1;
+        
+}
+
+.galleryMap {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+}
+
+.paintings {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+    overflow-y: auto;
+    
+}
+
+
+.galleryInfo section {
+    display: grid;
+    grid-template-columns: 12rem auto;
+    grid-gap: 20px;
+}
+
+div.galleryInfo {
+    grid-template-columns: 10rem auto;
+}
+
+.paintings section {
+    display: grid;
+    grid-template-columns: 20rem auto;
+}
+
+#paintingList {
+    overflow: auto;
+}
+
+#map {
+    height: 350px;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 2;
+}
+
+td {
+    width: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+table {
+    table-layout: fixed;
+}
+
+aside, .galleryInfo, .galleryMap, .box.paintings {
+    display: block;
+}
+
+
+
+.singleView {
+    grid-column: 1;
+    display: none;
+}
+
+.galleryList li:hover {
+    background-color:dimgray;
+}
+
